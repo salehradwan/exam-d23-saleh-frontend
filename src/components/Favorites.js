@@ -25,7 +25,7 @@ export class Favorites extends Component {
     deleteDrink = (drink_idx) => {
         axios.delete(`${this.state.serverUrl}/cocktail/${drink_idx}`).then(response => {
             this.setState({
-                favoriteData: response.data.drinks,
+                favoriteData: response.data,
                 showFavData: true
             })
         }).catch(error => {

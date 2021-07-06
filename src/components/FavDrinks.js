@@ -8,7 +8,7 @@ export class FavDrinks extends Component {
                 {
                     this.props.favoriteData.map((value, idx) => {
                         return (
-                            <Card style={{ width: '18rem' }} key={idx}>
+                            <Card style={{ width: '18rem', display: 'inline-block', margin: '20px 50px'}} key={idx} >
                                 <Card.Img variant="top" src={value.strDrinkThumb} />
                                 <Card.Body>
                                     <Card.Title> {value.strDrink} </Card.Title>
